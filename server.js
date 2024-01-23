@@ -38,7 +38,7 @@ app.use(methodOverride('_method'))
 app.use(requestLogger)
 //        V
 app.use(session({
-  secret: process.env.SESSION_SECRET || "mistyrose",
+  secret: process.env.secret || "mistyrose",
   resave: false,
   saveUninitialized: true
 }))
